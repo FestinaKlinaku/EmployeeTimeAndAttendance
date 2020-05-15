@@ -9,11 +9,7 @@ import javax.swing.*;
 public class EmployeeView extends JFrame
 {
 
-	 /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	JPanel panel;
+	 JPanel panel;
 	 JLabel user_label, id_label;
 	 JTextField userName_text, id_text;
 	 JButton submit, get, cancel;

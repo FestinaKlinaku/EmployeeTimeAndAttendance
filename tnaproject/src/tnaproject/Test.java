@@ -31,7 +31,17 @@ public class Test
 	    if (pressedButton == 0)
 	       {
 	         String s1 = JOptionPane.showInputDialog(null, "Name : ");
+	         while (s1.trim().isEmpty())
+             { JOptionPane.showMessageDialog(null, "Not a valid input, please try again", 
+                                             "", JOptionPane.INFORMATION_MESSAGE); 
+               s1 = JOptionPane.showInputDialog(null, "Name : ");
+             }
 	         String s2 = JOptionPane.showInputDialog(null, "ID : ");
+	         while (s2.trim().isEmpty())
+             { JOptionPane.showMessageDialog(null, "Not a valid input, please try again", 
+                                             "", JOptionPane.INFORMATION_MESSAGE); 
+               s2 = JOptionPane.showInputDialog(null, "ID : ");
+             }
 	         Employee employee = new Employee(s1,s2);
 	         model.add(employee);
 	         for (int i = 0; i < model.size(); i++) 
