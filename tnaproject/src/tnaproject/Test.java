@@ -8,20 +8,20 @@ import javax.swing.*;
  */
 public class Test
 {
-	public static void main(String[] args) throws Exception 
-	   {     
-	    ArrayList <Employee> model = getList();   
-	    EmployeeView view = new EmployeeView();
-	    EmployeeController controller = new EmployeeController(model, view); 
-	    controller.initController();
-	   }
+    public static void main(String[] args) throws Exception 
+	{     
+	   ArrayList <Employee> model = getList();   
+	   EmployeeView view = new EmployeeView();
+	   EmployeeController controller = new EmployeeController(model, view); 
+	   controller.initController();
+	}
 	  
 	   /**
          * Get the list of employees
          * @return ArrayList <Employee> model
          */
-	   private static ArrayList <Employee> getList()
-	   {
+    private static ArrayList <Employee> getList()
+	{
 	    ArrayList <Employee> model = new ArrayList <Employee>();
 	    while(true)
 	    {
@@ -62,5 +62,5 @@ public class Test
 	    else {break;}
 	    }
 	    return model;
-	   }
+	 }
 }
